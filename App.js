@@ -9,6 +9,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, Alert, TouchableOpacity} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import { FloatingAction } from 'react-native-floating-action';
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -32,26 +33,9 @@ export default class App extends Component<Props> {
 			<View style={styles.bottomView}>
 			</View>
 
-			<TouchableOpacity
-   style={{
-       borderWidth:1,
-       borderColor:'#4b4b4b',
-       alignItems:'center',
-       justifyContent:'center',
-       width:64,
-       height:64,
-       backgroundColor:'#4b4b4b',
-       borderRadius:100,
-       position: 'absolute',
-       bottom: 24,
-       right: 24
-     }}
-     onPress={() => {
-    Alert.alert('You tapped the button!');
-  }}
- >
-   {/* <Icon name={"chevron-right"}  size={30} color="#01a699" /> */}
- </TouchableOpacity>
+      <FloatingAction
+        
+      />   
 
     	</View>
     );
