@@ -10,6 +10,7 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, Alert, TouchableOpacity} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { FloatingAction } from 'react-native-floating-action';
+import { getStatusBarHeight } from 'react-native-iphone-x-helper'
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -49,9 +50,10 @@ SampleFunction = () => {
 const styles = StyleSheet.create({
   main: {
   	flex: 1,
-  	paddingTop: 40,
-  	paddingLeft: 24,
-  	paddingRight: 24
+  	paddingTop: getStatusBarHeight() + 30,
+  	paddingLeft: 40,
+  	paddingRight: 40,
+  	backgroundColor: 'transparent',
   },
   container: {
     flex: 1,
@@ -75,29 +77,7 @@ const styles = StyleSheet.create({
     height: 270,
     transform: [{ rotate: '25deg'}],
     position: 'absolute',
-    bottom: -180,
+    bottom: -170,
     left: -100,
     },
 });
-
-const actions = [{
-    text: 'Accessibility',
-    //icon: require('./images/ic_accessibility_white.png'),
-    name: 'bt_accessibility',
-    position: 2
-  }, {
-    text: 'Language',
-    //icon: require('./images/ic_language_white.png'),
-    name: 'bt_language',
-    position: 1
-  }, {
-    text: 'Location',
-    //icon: require('./images/ic_room_white.png'),
-    name: 'bt_room',
-    position: 3
-  }, {
-    text: 'Video',
-    //icon: require('./images/ic_videocam_white.png'),
-    name: 'bt_videocam',
-    position: 4
-  }];
