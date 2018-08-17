@@ -3,6 +3,7 @@ import { Router, Scene } from 'react-native-router-flux';
 import PageTwo from './PageTwo';
 import WelcomeScreen from './WelcomeScreen';
 import PairScreen from './PairScreen';
+import MainScreen from './MainScreen';
 
 import {
     AppRegistry,
@@ -33,6 +34,12 @@ class App extends Component {
                     	title="Pair Screen"
                     	hideNavBar={true}
                 	/>
+                	<Scene
+                		key="mainScreen"
+                		component={MainScreen}
+                		title="MainScreen"
+                		hideNavBar={true}
+                	/>	
                 </Scene>
             </Router>
         );

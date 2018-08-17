@@ -6,7 +6,7 @@
  * @flow
  */
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, Alert, TouchableOpacity, Navigator} from 'react-native';
+import {Platform, StyleSheet, Button, Text, View, Alert, TouchableOpacity, Navigator} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { FloatingAction } from 'react-native-floating-action';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper'
@@ -30,6 +30,8 @@ export default class App extends Component<Props> {
 				지금 바로 나의 mintboard와{"\n"}나의 디바이스를 연결할 수 있습니다.
 			</Text>
 
+      <Button onPress={() => Actions.mainScreen()}
+      title="Learn more" />
 			<LinearGradient
           		colors={['#5ed1b7', '#0ddf7f']}
           		start={{x: 0.0, y: 1.0}} end={{x: 1.0, y: 1.0}}

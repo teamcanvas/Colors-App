@@ -16,7 +16,6 @@ export default class PairScreen extends Component {
     		<Text style={styles.title}>pair device.</Text>
     		<Text style={styles.content}>나의 디바이스와 mintboard를 연결하세요.{"\n"}Bluetooth가 활성화 되었습니다.</Text>
 
-    		<View style={styles.line}></View>
     	</View>
     );
   }
@@ -43,11 +42,4 @@ const styles = StyleSheet.create({
   	marginTop: 7,
   	fontFamily: "NotoSansKR-Regular"
   },
-  line: {
-  	backgroundColor: '#d8d8d8',
-  	width: '200%', 
-    height: 2,
-    marginTop: 30,
-    left: -40,
-  }
 });
