@@ -11,7 +11,10 @@ export default class MainScreen extends Component {
     render() {
     return (
     	<View style={styles.main}>
-    		<Text style={styles.title}>mintboard_7350</Text>
+    		<View style={styles.titleview}>
+    			<Text style={styles.title}>mintboard_7350</Text>
+    			<View style={styles.circle}></View>
+    		</View>
     	</View>
     );
   }
@@ -19,18 +22,28 @@ export default class MainScreen extends Component {
 
 const styles = StyleSheet.create({
 	main: {
+		backgroundColor: '#ffffff',
 		flex: 1,
-		paddingTop: getStatusBarHeight() + 30,
+		paddingTop: getStatusBarHeight() + 40,
 		paddingLeft: 40,
 		paddingRight: 40,
 	},
-	content: {
+	titleview: {
 		flex: 1,
-	}
+		flexDirection: 'row',
+	},
 	title: {
-  	fontSize: 23,
-  	fontWeight: 'bold',
-  	color: '#4a4a4a',
-  	fontFamily: "NotoSansKR-Regular"
+  		fontSize: 23,
+  		fontWeight: 'bold',
+  		color: '#4a4a4a',
+  		fontFamily: "NotoSansKR-Regular",
+  },
+  	circle: {
+  		width: 15,
+  		height: 15,
+  		borderRadius: 50,
+  		backgroundColor: '#5ed1b7',
+  		marginLeft: 10,
+  		marginTop: 10,
   },
 });

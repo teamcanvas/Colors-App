@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   	paddingTop: getStatusBarHeight() + 30,
   	paddingLeft: 40,
   	paddingRight: 40,
-  	backgroundColor: 'transparent',
+  	backgroundColor: '#ffffff',
   },
   title: {
   	fontSize: 30,
