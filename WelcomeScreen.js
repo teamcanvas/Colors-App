@@ -26,7 +26,7 @@ export default class App extends Component<Props> {
     		<Text onPress={() => Actions.gray()} style={styles.title}>
 				welcome.
 			</Text>
-			<Text style={styles.content}>
+			<Text onPress={() => Actions.pairDevice()} style={styles.content}>
 				지금 바로 나의 mintboard와{"\n"}나의 디바이스를 연결할 수 있습니다.
 			</Text>
 
