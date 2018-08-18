@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -43,6 +42,7 @@
 		8F9795AF53FD49F5AA290E0D /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 28695DC59D8C4A58A42C8D9F /* NotoSansKR-Bold.otf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B0E3EFCA206D4F32809FF759 /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4DA16666258C46D6B58B610A /* NotoSansKR-Regular.otf */; };
+		99B9D5EBB5E64178B4F93EBD /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6B7F71D91AB24F718D77DD50 /* NotoSansKR-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -376,6 +376,7 @@
 		87E9AEAF99AE49959702F32E /* libBVLinearGradient.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libBVLinearGradient.a; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		F1693889C23D4C6BA049FA1E /* BleManager.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = BleManager.xcodeproj; path = "../node_modules/react-native-ble-manager/ios/BleManager.xcodeproj"; sourceTree = "<group>"; };
+		6B7F71D91AB24F718D77DD50 /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; name = "NotoSansKR-Medium.otf"; path = "../assets/fonts/NotoSansKR-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -649,6 +650,7 @@
 				4DA16666258C46D6B58B610A /* NotoSansKR-Regular.otf */,
 				28695DC59D8C4A58A42C8D9F /* NotoSansKR-Bold.otf */,
 				380C359073E14625A07213C7 /* NotoSansKR-Thin.otf */,
+				6B7F71D91AB24F718D77DD50 /* NotoSansKR-Medium.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1160,6 +1162,7 @@
 				B0E3EFCA206D4F32809FF759 /* NotoSansKR-Regular.otf in Resources */,
 				8F9795AF53FD49F5AA290E0D /* NotoSansKR-Bold.otf in Resources */,
 				499E59AC231C408FA9E35439 /* NotoSansKR-Thin.otf in Resources */,
+				99B9D5EBB5E64178B4F93EBD /* NotoSansKR-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
