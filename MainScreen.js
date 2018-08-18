@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, Button, View, Alert, TouchableOpacity, Navigator} from 'react-native';
+import {Platform, StyleSheet, Text, Button, Image, View, Alert, TouchableOpacity, Navigator} from 'react-native';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -18,40 +18,65 @@ export default class MainScreen extends Component {
     		</View>
 
     		<View style={styles.data}>
+
     			<LinearGradient
           		colors={['#53a0fd', '#3023ae']}
           		start={{x: 0.0, y:0.0}} end={{x: 1.0, y: 1.0}}
           		style={styles.content}>
 
-          		<Text style={styles.contentTitle}>공기질</Text>
+          		<Image style={styles.backgroundImage} 
+                	resizeMode='contain' 
+                	source={require('./image/airquality.png')}>
+				</Image>
+
+				<Text style={styles.contentTitle}>TVoc</Text>
           		<Text style={styles.contentResult}>96</Text>
           		<Text style={styles.contentUnit}>ppb</Text>
+
 			</LinearGradient>
+
 			<LinearGradient
           		colors={['#757575', '#333333']}
           		start={{x: 0.0, y: 0.0}} end={{x: 1.0, y: 1.0}}
           		style={styles.content}
         		>
+
+        		<Image style={styles.backgroundImage} 
+                	resizeMode='contain' 
+                	source={require('./image/co2.png')}>
+				</Image>
         		<Text style={styles.contentTitle}>이산화탄소</Text>
           		<Text style={styles.contentResult}>173</Text>
           		<Text style={styles.contentUnit}>ppm</Text>
 			</LinearGradient>
     		</View>
+
     		<View style={styles.data}>
     			<LinearGradient
           		colors={['#fad961', '#f76b1c']}
           		start={{x: 0.0, y: 0.0}} end={{x: 1.0, y: 1.0}}
           		style={styles.content}
         		>
-        		<Text style={styles.contentTitle}>기압계</Text>
-          		<Text style={styles.contentResult}>993</Text>
-          		<Text style={styles.contentUnit}>hPa</Text>
+
+        		<Image style={styles.backgroundImage} 
+                	resizeMode='contain' 
+                	source={require('./image/barometer.png')}>
+				</Image>
+        		<Text style={styles.contentTitle}>온도</Text>
+          		<Text style={styles.contentResult}>26</Text>
+          		<Text style={styles.contentUnit}>degree Celcius</Text>
 			</LinearGradient>
+
 			<LinearGradient
           		colors={['#b4ec51', '#429321']}
           		start={{x: 0.0, y: 0.0}} end={{x: 1.0, y: 1.0}}
           		style={styles.content}
         		>
+
+        		<Image style={styles.backgroundImage} 
+                	resizeMode='contain' 
+                	source={require('./image/waterdrop.png')}>
+				</Image>
         		<Text style={styles.contentTitle}>습도</Text>
           		<Text style={styles.contentResult}>64%</Text>
 			</LinearGradient>
@@ -63,7 +88,7 @@ export default class MainScreen extends Component {
 
 const styles = StyleSheet.create({
 	main: {
-		backgroundColor: '#ffffff',
+		backgroundColor: 'black',
 		flex: 1,
 		paddingTop: getStatusBarHeight() + 40,
 		paddingLeft: 40,
@@ -117,5 +142,13 @@ const styles = StyleSheet.create({
   		fontSize: 14,
   		marginTop: 8,
   		fontFamily: "NotoSansKR-Bold",
+  	},
+  	backgroundImage: {
+  		flex: 1,
+  		width: '100%', 
+  		height: '100%', 
+  		position: 'absolute',
+  		bottom: 0, 
+  		right: 0,
   	},
 });
