@@ -8,7 +8,6 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Button, Text, View, Alert, TouchableOpacity, Navigator} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import { FloatingAction } from 'react-native-floating-action';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper'
 import { Actions } from 'react-native-router-flux';
 
@@ -40,10 +39,7 @@ export default class App extends Component<Props> {
 			</LinearGradient>
 
 			<View style={styles.bottomView}>
-			</View>
-
-      <FloatingAction
-      />   
+			</View> 
 
     	</View>
     );

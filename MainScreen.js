@@ -88,7 +88,7 @@ export default class MainScreen extends Component {
 
 const styles = StyleSheet.create({
 	main: {
-		backgroundColor: 'black',
+		backgroundColor: 'white',
 		flex: 1,
 		paddingTop: getStatusBarHeight() + 40,
 		paddingLeft: 40,
