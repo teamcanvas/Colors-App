@@ -4,6 +4,7 @@ import PageTwo from './PageTwo';
 import WelcomeScreen from './WelcomeScreen';
 import PairScreen from './PairScreen';
 import MainScreen from './MainScreen';
+import HumidityScreen from './HumidityScreen';
 
 import {
     AppRegistry,
@@ -39,7 +40,12 @@ class App extends Component {
                 		component={MainScreen}
                 		title="MainScreen"
                 		hideNavBar={true}
-                	/>	
+                	/>
+                    <Scene
+                        key="humidityScreen"
+                        component={HumidityScreen}
+                        title="습도"
+                    />
                 </Scene>
             </Router>
         );

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, Button, Image, View, Alert, TouchableOpacity, Navigator} from 'react-native';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import LinearGradient from 'react-native-linear-gradient';
+import { Actions } from 'react-native-router-flux';
 
 export default class MainScreen extends Component {
 	static get defaultProps() {
@@ -67,6 +68,7 @@ export default class MainScreen extends Component {
           		<Text style={styles.contentUnit}>degree Celcius</Text>
 			</LinearGradient>
 
+      <View onPress={() => Actions.humidityScreen()}>
 			<LinearGradient
           		colors={['#b4ec51', '#429321']}
           		start={{x: 0.0, y: 0.0}} end={{x: 1.0, y: 1.0}}
@@ -80,6 +82,7 @@ export default class MainScreen extends Component {
         		<Text style={styles.contentTitle}>습도</Text>
           		<Text style={styles.contentResult}>64%</Text>
 			</LinearGradient>
+    </View>
     		</View>
     	</View>
     );
