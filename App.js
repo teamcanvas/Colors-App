@@ -18,10 +18,10 @@ class App extends Component {
             <Router>
                 <Scene key="root">
                     <Scene
-                           key="scarlet"
-                           component={WelcomeScreen}
-                           title="Welcome!"
-                           hideNavBar={true}     
+                        key="scarlet"
+                        component={WelcomeScreen}
+                        title="Welcome!"
+                        hideNavBar={true}     
                     />
                     <Scene
                         key="gray"
@@ -45,7 +45,5 @@ class App extends Component {
         );
     }
 }
-
-
 
 export default App;
